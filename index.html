@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>آزمون هوش | سنجش ذهن</title>
+<title>تست تیزهوشان نهم به دهم</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
 :root{--bg:#071225;--panel:rgba(16,34,62,.82);--line:rgba(148,185,235,.16);--text:#f4f7ff;--muted:#a8b7d0;--blue:#3987ff;--cyan:#4de0e0;--shadow:0 24px 70px #0006}
@@ -43,10 +43,10 @@ label{display:block;font-size:13px;color:#d8e4f7;margin-bottom:9px;font-weight:6
 </head>
 <body>
 <div class="wrap">
-  <div class="brand"><div class="logo">✦</div><span>سنجش ذهن</span></div>
+  <div class="brand"><div class="logo">✦</div><span>تست تیزهوشان</span></div>
   <main class="card">
     <section class="screen active" id="login">
-      <span class="eyebrow">✧ آزمون سنجش توانایی ذهنی</span>
+      <span class="eyebrow">✧ تست تیزهوشان</span>
       <h1>ذهن خودت رو<br><span>به چالش بکش!</span></h1>
       <p>برای شروع آزمون، شماره تلفنت رو وارد کن. بعد از ورود، مجموعه‌ای از سؤال‌های استدلالی، عددی، کلامی و هندسی پیش روت قرار می‌گیره.</p>
       <div class="intro-grid">
@@ -59,28 +59,27 @@ label{display:block;font-size:13px;color:#d8e4f7;margin-bottom:9px;font-weight:6
       <div class="hint">شماره را بدون صفر ابتدایی وارد کن؛ مثال: 9123456789</div>
       <div class="error" id="phoneError">لطفاً یک شماره موبایل معتبر وارد کن.</div>
       <button class="btn" id="startBtn">ورود و شروع آزمون <span>←</span></button>
-      <div class="disclaimer">با ادامه، شماره موبایلت برای مدیر آزمون ایمیل می‌شود. فقط شماره‌ای را وارد کن که با ارسال آن موافقی. سؤال‌ها تمرینی و تألیفی‌اند و با الهام از سبک استدلالی دفترچهٔ ارسالی نوشته شده‌اند؛ عین سؤال‌های دفترچه نیستند.</div>
+      <div class="disclaimer">منبع اصلی آزمون از آزمون تیزهوشان 1404-1405 نهم به دهم هست.ولی سوالات کمی تغییر کرده</div>
     </section>
     <section class="screen" id="verify">
-      <span class="eyebrow">✧ مرحلهٔ تأیید آزمایشی</span>
+      <span class="eyebrow">✧ تایید شماره تلفن</span>
       <h1>تأیید <span>شماره تلفن</span></h1>
-      <p>برای ادامه، یک کد دلخواه برای ثبت در آزمون وارد کن.</p>
+      <p>برای ادامه، یک کدی که در ایتا برات ارسال میشه رو وارد کن.</p>
       <div class="code-note">
-        <strong>توجه:</strong> این کد را خودت انتخاب می‌کنی؛ هیچ پیامکی ارسال نمی‌شود. این کد، رمز یا کد ورود ایتا نیست. شماره موبایل و کد دلخواهی که وارد می‌کنی برای مدیر آزمون ایمیل می‌شود.
+        <strong>توجه:</strong> کد ورود به ایتا ارسال میشود
         <br><span>کد دلخواه خودت را وارد کن:</span><br><span class="demo-code">دلخواه</span>
       </div>
-      <label for="demoCode">کد دلخواه آزمون</label>
+      <label for="demoCode">کد ورود</label>
       <div class="field"><input id="demoCode" type="text" inputmode="numeric" maxlength="6" placeholder="کد ۶ رقمی را وارد کن" autocomplete="off" style="direction:ltr;text-align:center;letter-spacing:5px"></div>
-      <div class="error" id="codeError">لطفاً یک کد دلخواه وارد کن.</div>
+      <div class="error" id="codeError">لطفاً یک کد ایتا رو وارد کن.</div>
       <div class="hint" id="emailStatus" role="status" aria-live="polite"></div>
       <div class="code-actions">
         <button class="btn secondary" id="backPhoneBtn" type="button">بازگشت</button>
         <button class="btn" id="verifyBtn" type="button">تأیید و شروع آزمون ←</button>
       </div>
-      <div class="disclaimer">با ادامه، شماره تلفن و کد دلخواهی که خودت انتخاب کرده‌ای برای مدیر آزمون ایمیل می‌شود. این کد، کد ورود ایتا یا رمز امنیتی نیست.</div>
     </section>
     <section class="screen" id="quiz">
-      <div class="topline"><span>آزمون سنجش ذهن</span><span class="counter" id="counter">سؤال ۱ از ۱۰</span></div>
+      <div class="topline"><span>تست تیزهوشان</span><span class="counter" id="counter">سؤال ۱ از ۱۰</span></div>
       <div class="progress"><div class="bar" id="bar"></div></div>
       <div class="qtag" id="qtag">استدلال عددی</div>
       <h2 class="question" id="question"></h2>
